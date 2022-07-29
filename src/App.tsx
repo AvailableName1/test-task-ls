@@ -15,8 +15,10 @@ export default function App() {
   const handleSubmit = useCallback(
     (e: React.SyntheticEvent) => {
       e.preventDefault();
-      setImages((prevImages) => [...prevImages, value]);
-      setValue('');
+      if (value.length > 0) {
+        setImages((prevImages) => [...prevImages, value]);
+        setValue('');
+      }
     },
     [value],
   );

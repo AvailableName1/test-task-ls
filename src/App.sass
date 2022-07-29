@@ -1,5 +1,10 @@
 .App
-  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  font-family: 'Helvetica Neue', sans-serif
+  padding-left: calc( 50% - 720px )
+  padding-right: calc( 50% - 720px )
   
 .header
   height: 20vh
@@ -8,3 +13,16 @@
   gap: 16px
   justify-content: center
   align-items: center
+
+#get-image-by-url
+  display: flex
+  gap: 0.7rem
+  align-items: stretch
+  & button
+    padding: 4px
+    background-color: white
+    transition: background-color 0.4s
+    border: 1px solid #000
+    &:hover
+      background-color: pink
+      cursor: pointer

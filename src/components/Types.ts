@@ -24,5 +24,6 @@ export interface InputFileProps {
   setImagesJSON: Dispatch<SetStateAction<ImagesJSON>>;
 }
 
+export type IsLoaded = 'not loaded' | 'loaded';
 export type URLImagesList = string[] | [];
 export type ImagesJSON = RootObject | null;
